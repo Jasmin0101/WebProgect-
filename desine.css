@@ -1,0 +1,19 @@
+body{  
+     background-color: black;
+}
+main{
+    
+    background-color: rgb(26, 26, 108);
+    color: aliceblue;
+    border: 20px;
+    border-color: grey;
+}
+footer{
+    border: 20px;
+    background-color: rgb(26, 26, 108);
+    color: aliceblue;
+    border-color:green;
+}
+a{
+    color: yellow;
+}

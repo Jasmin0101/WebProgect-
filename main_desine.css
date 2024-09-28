@@ -1,0 +1,8 @@
+.p_plus_desine{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+td{
+    background-color: silver;
+}

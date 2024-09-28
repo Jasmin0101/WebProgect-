@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="main_desine.css">
+        <title>Raggett on HTML4 - Chapter 1</title>
+    </head>
+    <body>
+        <header>
+             <small><a href="C:/Users/User/Desktop/Web/homework/Licensing%20Conditions.html">&copy; Addison Wesley Longman 1998. 
+                All rights reserved</a></small>
+        </header>
+        <main>
+            <h1>1. Introduction to the World Wide Web</h1>
+            <article>
+                <section>
+                    <p> [FIGURE -- what a geek]
+
+                            <p class="p_plus_desine" ><img width=350 height=225 src=img\CTN_01.gif
+                        alt="cartoon depicting a geek using a computer on a desert island">
+                        
+                        <h3>Included in this chapter is information on:</h3>
+                        
+                        <ul>
+                        <li>How the World Wide Web works
+                        <li>How the World Wide Web is different from the Internet
+                        <li>Java, Scripting and SGML &nbsp;-&nbsp; a layperson's explanation
+                        <li>How the Web has been made accessible for people with disabilities
+                        <li>How style sheets can improve Web documents
+                        </ul>
+                        
+                        <table><tr><td >
+                        <h3>Summary</h3>
+                        
+                        <p>HTML is the publishing language for the World Wide Web. Behind
+                        the scenes, every document you see on the Web &nbsp;-&nbsp; whether
+                        covering the national news, giving information about university
+                        courses, selling books or describing a local cat show &nbsp;-&nbsp;
+                        is written using HTML. But why is HTML necessary? Why is a browser
+                        needed to display HTML documents, and what is the role of the
+                        server? These questions, as well as simple descriptions of Java,
+                        scripting, multimedia and other Web-associated technologies, form
+                        the subject of this chapter.
+                        </table>
+                </section>
+                <h2>1.1    Simple use of the Web</h2>
+                <section>
+                    <p>From your home in the United Kingdom, in the small English town
+of Chipping Sodbury, you decide to find out what entertainment there
+is in Bath, the famous city only 15 miles away. A company publishes
+<em>What's On in Bath</em> online, and you have read that this is
+available on http://www.bath.info.uk/ as a series of Web `pages' on
+the Internet. You decide to take a look. You switch on your computer
+and start it up in the usual way. Just as you might click on an icon
+to start up your desktop publishing package, so you click on the
+icon to load your World Wide Web browser. The browser is a piece of
+software that allows you to display certain kinds of information
+from the Internet.
+
+<p>Your modem, which connects your computer to the telephone line in
+the street via an ordinary household telephone socket, makes a
+series of electronic beeps as it dials up the nearest Internet point
+of presence and puts you onto the 'Net. Via the interface provided
+by your Web browser, you can now enter the Internet address,
+otherwise known as the URL, or Uniform Resource Locator, of the file
+containing the front page of <em>What's On in Bath</em>. As with all
+other information on the Web, this would start with `http://', for
+example:
+
+
+<pre>
+    http://www.bath.avon.uk/
+</pre>
+
+<p>HTTP (HyperText Transfer Protocol) is the name of the Web's own
+transmission protocol. Web pages are sent over the Internet to your
+computer courtesy of HTTP.
+
+<table><tr><td >
+<!-- sidebar on protocols goes here -->
+<h3>The difference between the Web and the Internet</h3>
+    <p>Do not make the rather common mistake of confusing the Web with
+    the Internet itself: the Internet simply provides the medium for the
+    Web to run on, just as a telephone line provides the medium for
+    telephone conversations. What the Web does is provide the technology
+    for publishing, sending and obtaining information over the expanse
+    of the Internet. How the Internet actually works may be a matter of
+    interest, but the Web user does not need to know about it in any
+    detail.
+    
+    <h3>Protocols</h3>
+    
+    A protocol consists of salutations exchanged between computers:
+    `good morning', `be with you in a tick', `file coming down the line
+    now' and so on. Each service on the Internet has its own protocol:
+    its own personal way of sending files around the system. The
+    protocol for the Web is HTTP. File Transfer Protocol (FTP) is
+    another common protocol of which you may have heard.
+    </table>
+    <p>This fictitious home page would have perhaps a photo showing the
+        famous Roman Baths on the first page, together with a short
+        paragraph introducing the town, and a menu of icons that call up
+        specific information on Bath's museums, parks, bus-tours and so on.
+        These icons provide hypertext links for you to click on-screen
+        `buttons', enabling you to home-in on the information you want.
+        Hypertext links are in many ways the most important feature of the
+        Web. In the case of our imaginary Web pages, clicking on hypertext
+        buttons mostly displays data that is held on computers somewhere in
+        Bath itself. Sometimes, however, a hypertext link may fetch a file
+        from somewhere quite different on the Internet. If you click on the
+        title of a play taking place in Bath, information about the
+        performing company may be fetched across the Internet from a
+        computer thousands of miles away in the United States. From that
+        point on, you might be able to call up pages that tell you about
+        other plays by the same company. With the Web, you can depart on
+        your own private `tour' of information on a chosen subject whenever
+        the inclination takes you. This is by virtue of the hypertext links
+        that span the globe.
+        
+        <p>You can also pay for goods and services over the Web. You could,
+        for example, decide to order some tickets for a play by filling in a
+        form displayed on a `page' of an online magazine. You might buy a
+        $20.00 seat for <em>`As You Like It'</em> at the Bath Playhouse and
+        then pay by credit card. The example below is taken from a different
+        application on the Web. You can see now what a Web page looks like.
+        
+        <p>You can see on-screen buttons to click on: these are the
+        hypertext links. There are two types: underlined words and pictures.
+        These buttons serve to fetch up new information across the Internet.
+        Also, you can see the title of the page and a URL at the bottom of
+        the screen telling you from where the information originated.
+        
+        <p> [FIGURE movienet screen]
+        
+        <p>Looking at this screen and other pages from the Web, you can see
+        that the Web provides the following:
+        
+        <ul>
+        <li><p>A means for publishing online information. The Web enables
+        you to lay out text and graphics of the `pages' on the screen, and
+        to insert titles, photos, captions and so on.</p>
+        
+        <li><p>A means for retrieving online information via hypertext links,
+        at the click of a button. You can also use Web search programs to
+        find the information you want.</p>
+        
+        <li><p>An interface for looking at information retrieved. This is
+        done by virtue of a Web browser.</p>
+        </ul>
+        
+        <p>A Web page may also contain forms for conducting commercial
+        transactions across the Internet and include other applications; for
+        example, spreadsheets, video clips, sound clips and so on.
+        
+        <p>The Web is, therefore, simultaneously a means of online
+        publishing, a way of accessing, storing and retrieving information,
+        as well as a means of sending, acquiring and querying data across
+        the Internet. Most importantly, the Web allows the use of hypertext
+        links that can take you to any computer on the Internet. All these
+        functions work by using the hardware: the wires, the cables, the
+        computers, the satellite links that are used to send information
+        from computer to computer using Internet protocols.
+        
+        <p>Before the Web, the Internet was largely the domain of computer
+        nerds and others who delighted in the abstract and concise.
+        Interfaces to early Internet applications required almost
+        mathematical precision to operate, and programs such as FTP and
+        Telnet were purely command-driven. Later, when file-retrieval
+        services such as WAIS and Gopher became popular on the Internet,
+        these had the advantage of being menu-driven, but still were rather
+        cumbersome.
+        
+        <p>Although the Internet still was using interfaces suitable for the
+        more technically inclined, software for home and office markets long
+        ago departed from command-driven applications. The idea of a
+        graphical interface using Windows, which originated from work at
+        Xerox PARC (Palo Alto Research Center) in the 1970s, was popularized
+        in the early 1980s, primarily through Apple Computer Inc.'s
+        Macintosh computer. IBM Corp.'s Personal Computer and other
+        manufacturers' PC-compatible machines followed suit with the
+        introduction of Microsoft Corp.'s MS-Windows operating system a few
+        years later. At the same time, windowing systems were introduced to
+        the UNIX workstation market, which is now dominated by the X-11
+        interface. It has, however, taken until the middle 1990s to
+        introduce a simple and reliable user interface for accessing
+        information over the Internet. The Web's popularity has doubtless
+        been in part because it offers a simple point-and-click interface,
+        which immediately makes it more accessible to a much wider range of
+        users. Another important factor must have been email, which, as it
+        has gained popularity, has made the idea of sending information
+        across networked computers that much more acceptable.
+        
+        <table><tr><td>
+        <h3>What is a URL?</h3>
+        
+        <p>This is a much-simplified explanation for the novice.
+        
+        <p>Given the fact that there are vast numbers of Web servers, the
+        question remains of how can HTTP possibly locate just the file you
+        want from somewhere on the Internet. The answer is through the use
+        of the URL, the Uniform Resource Locator. This is rather like the
+        telephone number of a computer on the Internet, together with
+        information appended to specify the exact file to be sent to your
+        machine. Taking the URL for our fictitious Web pages in Bath, we can
+        see the general pattern that URLs adopt. Look at
+        
+        <pre>
+            http://www.bath.avon.uk
+        </pre>
+        
+        <p>more closely.
+        
+        <p>`http' is the name of the Web protocol used to access the data
+        across the Internet.
+        
+        <p>`www.bath.avon.uk' is the Internet name or the domain name of the
+        computer on which the information is stored. The `www' indicates
+        that this is a World Wide Web server. `uk' is the country code for
+        the United Kingdom.
+        
+        <p>To be more specific about the file you want from the server in
+        question, you add to the URL a path and a file name. For example:
+        
+        <pre>
+            http://www.bath.avon.uk/time_tables/buses.html
+        </pre>
+        
+        <p>which would point to a file called `buses.html' in a directory
+        called `time_tables'. We can imagine that `buses.html' contains bus
+        timetables for the city of Bath, which can be conveniently called up
+        on your screen.
+        
+        <p>URLs can specify files to be accessed using protocols other than
+        `http'. A URL beginning with `ftp://' points to a file to be fetched
+        using FTP &nbsp;-&nbsp; the File Transfer Protocol. Meanwhile, a file
+        beginning with `mailto://' links to an application which allows you
+        to send an email message to a pre-defined address, and `news://'
+        points to a USENET newsgroup and uses the Network Transfer Protocol
+        to transfer data.
+        
+        <p>There are various conventions when it comes to URLs. Take the
+        letters `.com' for instance. These mean `company' as in:
+        `http://www. microsoft.com'.
+        
+        <p>Non-profit organizations may use `.org' and educational
+        establishments use `.edu'. Similarly, there are codes for countries.
+        A URL may end in `.us' for the United States, `.fr' for France,
+        `.au' for Australia and so on. Some of the conventions for URLs are
+        listed in Appendices E and F.
+        
+        <p>How are email addresses different from URLs? Email addresses
+        follow a different format: name@name.name.domain. For example:
+        tiptoes@hawks. uni.edu.
+        
+        <p>The string of letters following the @ sign identifies the machine
+        to which the mail will be sent, whereas the name of the person who
+        will receive the mail is given directly before the @ sign. There may
+        be more than one person logging on to the machine to read mail. That
+        is why the name of the person becomes important in an email address.
+        </table>
+                </section>
+                <h2>1.2    The Web in the context of the Internet</h2>
+                <section>
+                    <p>The Internet is a vast network of interconnected computers. Just
+                        as AT&amp;T, France Telecom, British Telecom, and other countrywide
+                        or regional telephone networks now are joined together to form a
+                        global telephone system, so it is with the Internet. The many
+                        thousands of computer networks that make up the Internet are joined
+                        together on a global scale, so that any Internet computer can
+                        communicate with any other.
+                        
+                        <p>How can your computer know how to find someone else's computer on
+                        the other side of the world? Just as each telephone in the world has
+                        its own unique telephone number, so each computer connected to the
+                        Internet has its own computer number. This is known as its IP, or
+                        Internet Protocol, address. However, because IP addresses consist of
+                        long series of numbers that are cumbersome to remember and type, you
+                        rarely come across them in everyday Internet use; most people prefer
+                        to use the parallel system of naming computers. This is the system
+                        of Internet host names, sometimes called Internet addresses or even
+                        domain names. Whereas a computer on the Internet may have an IP
+                        address such as 17.254.0.63, it may have a more manageable Internet
+                        host or domain name such as www.drizzle.org. Servers consult a
+                        globally distributed directory to map each host name onto the
+                        corresponding IP address.
+                        
+                        <p>Once you are connected to the Internet, you can theoretically
+                        `dial' anywhere you want. This gives you tremendous freedom. The
+                        cost of Internet access remains the same regardless of whether or
+                        not you talk to a computer in Australia, England, the United States,
+                        or in the next town. This is because you pay only for the time spent
+                        on the line to your nearest Internet point of presence. And, just as
+                        when you make a phone call to another country, you are hardly aware
+                        that your voice is traveling along foreign telephone lines, so it
+                        is, theoretically, with the Internet. Although data sent from a
+                        computer linked to a network in an office in Paris may travel across
+                        constituent networks <em>en route</em> to Los Angeles, as a user, you
+                        do not have to worry about the path it takes. The only evidence you
+                        have that the requested information comes from far away is when a
+                        part of the Internet system is in heavy use and you have to wait.
+                        
+                        <table><tr><td>
+                        <h3>The French system Minitel is used in ways similar to the Web</h3>
+                        
+                        <p>It is interesting to note that the French have been using a
+                        public system of information access for a number of years, which, in
+                        many ways, has occupied the same niche as the Web, although not
+                        nearly so sophisticated nor as versatile. Called Minitel, the system
+                        consists of hardware in the form of a computer, keyboard and modem
+                        originally given away free to subscribers of France Telecom, the
+                        national French telephone company. Minitel is very easy to use and
+                        is extremely popular &nbsp;-&nbsp; most homes have one. Minitel has
+                        existed as a household `pet' for more than 10 years. Using your
+                        Minitel, you dial up on the Minitel online service, and then proceed
+                        through a number of menus to book yourself a seat on a train, read
+                        the latest recipe for <em>la mousse au chocolat &agrav;
+                        l'anglaise</em>, inspect your bank balance, book hotel rooms and so
+                        on.
+                        </table>
+                        
+                </section>
+                <h2>1.3    Basic components of the Web</h2>
+                <section><p>The basic components of the Web are shown in the following
+                    illustration. They are:
+                    
+                    <ul>
+                    
+                    <li><p><strong>Web servers</strong>, which are computers that hold
+                    information for distribution over the Internet. In the example
+                    application in the diagram, one Web server might hold the text and
+                    graphics of the online magazine <em>What's On in Bath</em>, and
+                    another server might hold information on which seats are available
+                    for a particular concert. The magazine would be formatted using the
+                    Web's own publishing language, HTML (HyperText Mark-up Language).
+                    The data on available seats and their price would be held in a
+                    database with links to specific forms that are published using
+                    HTML.</p>
+                    
+                    <li><p><strong>Servers</strong>, which can be PCs, Macintosh systems
+                    or UNIX workstations: it is the server software that makes them
+                    special, rather than the computer itself. That said, servers need to
+                    be fairly up-market machines. Servers do need to be left on all the
+                    time, so that people can access the information on them whenever
+                    they want. Another important point about servers: they are
+                    relatively difficult to set up. If you are a non-technical person
+                    who wants to publish on the Web, the best thing to do is to rent
+                    some space on someone else's server.</p>
+                    
+                    <li><p><strong>Web clients</strong>, which can be PCs, Macintoshes
+                    and other computers that are connected to the Internet and which can
+                    retrieve information from Web servers. A Web client is the computer
+                    on your desk. PCs, Macintoshes, UNIX workstations and even simple
+                    terminals can run client software. Different client software is
+                    marketed (or is given away free) for different platforms. Thus,
+                    Mosaic has both a Macintosh and a PC implementation.</p>
+                    
+                    <li><p><strong>HTTP protocol</strong>, which is used to transmit
+                    files between servers and clients. When you click on a hypertext
+                    link or fill out a form in a Web document, the results need to be
+                    sent across the Internet as quickly as possible, and then to be
+                    understood by a server at the other end. Instructions such as `send
+                    me this file' or `get me that image' are carried by the Web
+                    communications protocol, HTTP. This protocol is the `messenger' that
+                    fetches files to and from servers, and then delivers results to your
+                    computer every time you click with a request. HTTP has its
+                    counterparts in other Internet services: FTP, file transfer
+                    protocol, and Gopher are protocols that obtain different sorts of
+                    information from across the Internet.</p>
+                    
+                    <li><p><strong>Browser</strong> software, which is needed by a Web
+                    client for displaying text, images, video clips and so on. This is
+                    supplied under the umbrella name `browser', of which Mosaic,
+                    Microsoft Corp.'s Internet Explorer and Netscape Communications
+                    Corp.'s Navigator and Communicator browsers are probably the
+                    best-known examples. Browser software gives you the ability to scan
+                    information retrieved from Web servers, as you would browse through
+                    a book. It also gives you facilities for saving and printing
+                    information obtained on the Web.</p>
+                    
+                    </ul>
+                    
+                    <p> [FIGURE -- globe p.8]
+                    
+                    <p  class="p_plus_desine"><img width=300 height=250 src=C:\Users\User\Desktop\Web\homework\img\CTN_02.gif
+                    alt="frog leaping over the world - a long distance jump">
+                    
+                    <p>A key point that helped make the Web successful is that it is
+                    multi-platform. What this means is that it does not matter what kind
+                    of computer you are using; you can still view information published
+                    on other, usually incompatible, machines. Thus, a PC user can access
+                    information published on a Macintosh; a Macintosh can access
+                    information published by a PC; UNIX users will find that they are
+                    compatible with everyone. The trick is that each computer in its own
+                    way can assimilate HTML. What happens when an HTML document gets to
+                    its destination is up to the computer on the receiving end. It can
+                    display paragraphs in Helvetica 20-point type if it pleases, and
+                    headings in Times 14-point bold type, if that is the font available.
+                    Whereas the document is transmitted computer-to-computer in a
+                    standard format, individual browsers may display it quite
+                    differently, depending on the capabilities of the hardware and
+                    software in the computer on the receiving end.
+                </section>
+                <h2>1.4    A universally understood publishing language: HTML</h2>
+                <section>
+                    <p>To publish information for global distribution on the World Wide
+                        Web, you need a universally understood publishing language, a kind
+                        of mother tongue, which all computers on the Web can potentially
+                        understand. You also need a commonly understood communications
+                        protocol for sending published information `down the wire' from
+                        computer to computer. This should enable users to download
+                        information to their machine at the click of a button, and also to
+                        send back information (your address, a credit card number, a query
+                        to a database and so on) with little effort.
+                        
+                        <p>The publishing language used by the Web is called HTML (HyperText
+                        Mark-up Language). Using HTML, you can specify which parts of your
+                        text are to be headings, paragraphs, bulleted lists, and which parts
+                        are to be rendered in bold-face type, in italicized type and so on.
+                        You can use HTML to insert tables into documents, to write
+                        equations, to import images and to format fill-out forms for
+                        querying databases at a distance. (Some of these features are
+                        specific to HTML 3 and are not supported by earlier versions of
+                        HTML.) The HTML language itself is very flexible and not difficult
+                        to use, although, as with all tasks associated with computing,
+                        patience is a necessary virtue for authoring hypertext. Part of the
+                        Web's appeal is that almost anyone with a reasonable PC, Macintosh
+                        or UNIX computer can publish information without being unduly
+                        technical. Judging by the variety of publishers on the Web today,
+                        HTML is within the grasp of many. A simple example of HTML can be
+                        seen at the beginning of Chapter 3.
+                </section>
+                <h2>1.5    The HTTP protocol</h2>
+                <section>
+                    <p> [FIGURE in margin -- long distance jump p.9]
+
+                        <p>The initial protocol for the Web was very, very simple. The
+                        client sent a request: `GET this filename' and the other end sent
+                        back the file and closed the connection. And that was it. There was
+                        no content type to tell you what kind of file was being sent. No
+                        status code. Just the file. The client therefore had to guess what
+                        it had been given and this developed into a fine art. First, the
+                        browser would look at the file extension to see if there were any
+                        clues, such as &dot;GIF or &dot;HTML, and then it would look at the
+                        beginning of the file in case the first few bytes gave the game away
+                        &nbsp;-&nbsp; all rather precarious.
+                        
+                        <p>Then along came MIME, a kind of multimedia extension to email.
+                        This was soon adapted to HTTP so that now, when you receive a file,
+                        you actually have a status code and a content type. This content
+                        type tells you whether or not the file is text/HTML, video/MPEG,
+                        image/GIF and so on, which gives the browser a chance to call up the
+                        correct viewers to display the file. The burden of finding out what
+                        kind of file it was has now moved to the server. On UNIX and DOS,
+                        servers still play this game of `guess the file format'; whereas on
+                        the Macintosh, this is stored as part of the file itself.
+                        
+                        <p>The HTTP we use today is the product of collaboration between
+                        CERN and a group at the National Center for Supercomputer
+                        Applications (NCSA) at the University of Illinois at
+                        Champaign-Urbana. Innovations since that time included security
+                        features such as Netscape's secure socket layer (SSL), and more
+                        recently, the ability to keep open the connection to the server so
+                        that the server can make multiple requests. The World Wide Web
+                        Consortium is looking into ways of improving this protocol, and into
+                        methods of text compression that enable information on the Web to
+                        arrive at its destination much quicker.
+                </section>
+                <h2>1.6    More than just text and pictures on the Web</h2>
+                <section>
+                    <p>The Web is expanding not only in terms of how much information it
+                        holds, but also in terms of the variety of information it holds. The
+                        figure below illustrates this general trend. On the left-hand side,
+                        you can see the Web as it started, predominantly as a medium for
+                        publishing information in textual form, and then it progressed to
+                        include photos, diagrams and so on.
+                        
+                        
+                        <div class=figure-caption>
+                        <h3>Simplified view of components of the Web.</h3>
+                        
+                        More variety on the Web. From being a simple text-based system, the
+                        Web now supports a variety of media.
+                        </div 
+                        
+                        <p> [FIGURE -- more variety on the web p.10]
+                        
+                        <p>Toward the right-hand side of our diagram, we show the latest
+                        features at the time of writing: the introduction of plug-in
+                        modules, the Java programming language that enables all manner of
+                        small applications to be sent down the wire and used within Web
+                        applications, and so on.
+                        
+                        <p>Many of the new features of HTML are associated with this
+                        departure away from the simple document and toward a Web which
+                        combines text, graphics, video, audio, applications such as
+                        spreadsheets, front ends to databases, virtual reality applications
+                        and all sorts of other `objects'.
+                        
+                        <p> [FIGURE -- you called sir p.11]
+                        
+                        <p  class="p_plus_desine" ><img width=400 height=402 src=C:\Users\User\Desktop\Web\homework\img\CTN_03.gif
+                        alt="a butler carrying a tray 'You called Sir?'">
+                        
+                        <h3>Java</h3>
+                        
+                        <p>At the time of writing, Java is a very popular buzzword. Java is
+                        a programming language that enables programmers to write small
+                        applications that are sent over the Web and then executed on the
+                        client. It is an object-oriented language related to the C language.
+                        What is so special about Java is that programs can be sent to any
+                        machine with the right browser to understand them; furthermore, the
+                        code will run safely without any risk of adversely affecting the
+                        client.
+                        
+                        <p>From the user's point of view, Web documents suddenly become much
+                        cleverer. It is as though your browser automatically creates
+                        features, such as the ability to run a spreadsheet or to play a
+                        piece of animation, right in front of your eyes, without you having
+                        to load any extra software. The code required to do such tricks is
+                        compiled into a special binary format and executed by a Java
+                        interpreter in your machine. Java applications are called `applets'
+                        (which means `small applications' &nbsp;-&nbsp; it would be another
+                        thing entirely to send full-blown application software over the Web)
+                        and are small pieces of code that rely on libraries of Java
+                        `classes' in the browser. These libraries indicate that the browser
+                        has a certain amount of processing knowledge resident in the browser
+                        itself: the browser knows how to create a window, respond to events,
+                        paint things within a window, draw text within a window and so on.
+                        The applets arriving across the Web capitalize on this knowledge and
+                        use the library routines to do something useful, such as displaying
+                        a simple spreadsheet or a piece of animated graphics.
+                        
+                        <p>But, what happens if the applet calls upon a class that is not
+                        available at the client end? In such cases, the class has to be
+                        fetched over the Internet, a process that indeed may be rather slow.
+                        For this reason, it is best to limit the number of these
+                        `additional' classes.
+                        
+                        <h3>Scripts for HTML</h3>
+                        
+                        <p>Scripts are small programs, which are transparent to the user and
+                        which go on `behind the scenes' fine-tuning Web pages in one way or
+                        another. The author can write a script in one of several available
+                        scripting languages. Scripts themselves may have one of several
+                        functions. The classic function is rendering a form to seem `smart'
+                        so that it interacts with you as you fill it in. Thus, you might
+                        arrange for a script to check each form field in turn to make sure
+                        it is properly filled in, and then to advise you if you have
+                        mistakenly left out some critical piece of information.
+                        
+                        <p>VBScript was invented by Microsoft and is an adapted version of
+                        Visual Basic; JavaScript is a Netscape scripting language and Sun
+                        has tcl.
+                        
+                        <p>In the future, scripts may be used to create various special
+                        effects, such as animation. The later chapter in this book on
+                        Scripting examines some of the current and upcoming uses for
+                        scripting. Scripts can also be used to tailor components of a
+                        particular program, such as a spreadsheet program. In this instance,
+                        application software developers will supply off-the-shelf components
+                        for a program. Let us suppose that the components are for a
+                        spreadsheet program; with a script, you can easily integrate
+                        off-the-shelf components into the application, a feat that would
+                        have previously required many programmer hours to compile. But with
+                        the hypothetical script you have written, this almost seamless
+                        integration happens in much the same way as it does with Visual
+                        Basic; here, the components are written in a kind of systems
+                        language and then, the script enables off-the-shelf components to be
+                        integrated into the application itself. If scripts are half as good
+                        as they promise, they can save many a programmer's headache.
+                        
+                        <h3>The idea of the Internet media type</h3>
+                        
+                        <p>If HTML can have all sorts of items embedded in it &nbsp;-&nbsp; pieces
+                        of animation to be played by your browser, small programs to run on
+                        your computer, and even music &nbsp;-&nbsp; then surely the browser must
+                        have some way of knowing what kind of beast is coming down the line.
+                        A browser can sense what type a file is and therefore it can know
+                        what to do with it by using the <em>Internet media type</em>. The
+                        Internet media type is a code sent with the file. The browser uses
+                        this code to work out what software is needed to interpret and
+                        display the data. Some examples include the following: the Internet
+                        media type for an HTML document is text/HTML: for a JPEG image, the
+                        Internet media type is image/JPEG.
+                        
+                        <p>Once the media type has been recognized and the correct software
+                        called up to deal with the file, the information in the file can be
+                        displayed embedded in the document; that is, it is displayed in an
+                        area of the document as though it were simply part of it. Another
+                        way of looking at this is that information can be `plugged in' to a
+                        document. Indeed, the phrase `plug-in' is commonly used to describe
+                        downloading embedded files that are not in HTML, and which require
+                        software at the browser end to come to the rescue and display them.
+                        
+                        <p>A browser may allow, for example, a PDF (Portable Document
+                        Format) file to appear down the wire. The browser sees that this has
+                        an Internet media type Application/PDF. It then calls up the Adobe
+                        Acrobat reader to display the PDF file. Once the media type is
+                        known, the browser loads the correct application software and
+                        interprets the file.
+                </section>
+                <h2>1.7    HTML and its relationship to SGML</h2>
+                <section>
+                    <p>Early work on representing documents focused on rendering
+                        instructions needed to print the documents. Work by IBM on GML
+                        (Generalized Mark-up Language) focused on an alternative approach,
+                        whereby standard document structures such as headers, paragraphs,
+                        lists and so on were marked up by tags inserted into document text.
+                        The emphasis on document structure rather than on rendering
+                        instructions, made it dramatically easier to move documents from one
+                        system to another whether for display on simple terminals, line
+                        printers or sophisticated typesetting machinery.
+                        
+                        <p>This work led to the Standard Generalized Mark-up Language, which
+                        is an international standard ISO 8879:1986. SGML enables you to
+                        define a grammar for marked-up documents that defines the ways in
+                        which tags can be inserted into documents. For instance, list items
+                        only make sense in the context of a list, and table cells only make
+                        sense in the context of a table. SGML's formal way of describing the
+                        grammar is called the Document Type Definition.
+                        
+                        <p>Global hypertext makes worse the problem in moving documents from
+                        one system to another; for example, we have Macintosh systems, PCs,
+                        a variety of UNIX boxes, simple terminals and even speech I/O
+                        devices for the visually impaired. SGML proved ideally suited for
+                        this application. Tim Berners-Lee chose SGML to define the HTML
+                        document format for the World Wide Web. HTML is formally an
+                        application of SGML. The HTML Document Type Definition (DTD)
+                        formally defines the set of HTML tags and the ways that they can be
+                        inserted into documents.
+                        
+                        <p>To the uninitiated, DTDs may seem rather intimidating. This book
+                        tries to act as a guiding hand to explain the HTML mark-up language
+                        and how to apply it so that it creates documents for Web publishing.
+                        HTML is not a static document format, but is evolving rapidly from
+                        its simple beginnings as conceived by Tim Berners-Lee.
+                        
+                </section>
+                <h2>1.8    The Web for people with disabilities</h2>
+                <section><p>One of the areas in which the World Wide Web Consortium (W3C) has
+                    shown great interest is how to make the Web accessible to the blind.
+                    In the case of HTML, this has involved two things in particular,
+                    discussed below.
+                    
+                    <p>First of all, the IMG tag for inserting images (as explained in
+                    our chapter <em>Graphics on the Web</em>) is to be superseded by an
+                    entirely different tag (OBJECT), which enables the browser to
+                    display textual mark-up as an alternative when a visual image
+                    appears on the screen.
+                    
+                    <p>Suppose you have a photograph as part of your Web pages. Browsers
+                    will usually display the photograph as the author intended. A
+                    browser used by a blind or visually impaired person will, however,
+                    be set up to display a paragraph or two of descriptive text instead
+                    of the photograph. This text must be included by the author for the
+                    benefit of text-only browsers and may contain hypertext links,
+                    itemized lists and all kinds of other mark-up. Seeing such text, the
+                    browser will read aloud the words to the user and even use
+                    appropriate intonation for bold, emphasized text and so on.
+                    
+                    <p>By including textual mark-up as an alternative to images, the
+                    blind or visually impaired Web user is in a far better position than
+                    previously. The still-popular IMG tag allows only very limited
+                    alternative text in lieu of images and thus puts it out of favor
+                    with those who rely on speech generation.
+                    
+                    <p>Second of all, the W3 Consortium is encouraging authors to
+                    separate the <em>structural</em> aspects of their documents from
+                    those aspects of the documents that are merely to do with
+                    <em>layout</em>. Once this has been done, the software that enables
+                    the text to be synthesized and read aloud to the blind or visually
+                    impaired user has got an easier job to do. Think about it: if a page
+                    is marked up solely in terms of headings, paragraphs, lists, and
+                    other structural items, then it becomes much simpler to understand
+                    the HTML and to render the content into speech. But the moment that
+                    extraneous information about font size, alignment of text, margin
+                    width, color and so on is mixed in with the general mark-up, then
+                    translating that mark-up into a spoken equivalent becomes much
+                    harder.
+                    
+                    <p>An ardent enthusiast when it comes to making the Web available to
+                    the blind is Dr T.V. Raman. A clear and original thinker, Raman
+                    &nbsp;-&nbsp; himself blind &nbsp;-&nbsp; has contributed widely to
+                    discussions and negotiations with browser vendors on the subject of
+                    Web access for people with disabilities, and also is an active
+                    participant at the Math Working Group. He has also written the
+                    Emacspeak Speech Interface, which is a full-fledged, speech-output
+                    system that enables the blind and visually impaired to access the
+                    Web with a line-mode browser within a UNIX environment.
+                    </section>
+                    <h2>1.9    Math and HTML</h2>
+                    <section>
+                        <table><tr><td>                            <h3><a name=math>Math plug-in</a></h3>
+                            
+                            <p>A new plug-in for math should be ready by August 1997. This is a
+                            simple-to-use piece of software which allows easy publishing of
+                            mathematical and scientific expressions on the Web. It is written by
+                            Dave Raggett under the auspices of the World Wide Web Consortium.
+                            </table>
+                            
+                            <p>This book you may notice, does not cover how to mark up math on
+                            the Web. In this book's previous edition, math was inserted as a
+                            chapter in its own right with the happy anticipation that math soon
+                            would become part of the HTML standard. Unfortunately, that never
+                            happened, and, although certain browsers have implemented the math
+                            spec as it stood, for the main, math on the Web is still in the
+                            wizards' pot; to be sure, there is no end of disagreement on the
+                            recipe.
+                            
+                            <p>Just as HTML has its own Working Group, so does Math. The HTML
+                            Math group includes representatives from companies who produce
+                            special software for typing and editing mathematical formulae on
+                            computers; examples of such software are Waterloo Maple and Wolfram.
+                            There are also representatives from scientific publishers such as
+                            Reed-Elsevier Ltd, as well as the American Mathematical Society.
+                            Each has its own view of the correct way to do things, and Dave
+                            Raggett of the World Wide Web Consortium, who did the original HTML
+                            Math proposal, has his own ideas, too.
+                            
+                            <p>Given the widely disparate views of group members, evolving a
+                            standard for marking up math on the Web is a challenge, indeed.
+                            Nonetheless, the Math Working Group eventually hopes to come up with
+                            a proposal for concrete notation of HTML math, with the initial
+                            deployment via <em>plug-ins</em>, which is add-on software that
+                            enables browsers to cope with math notation. Meanwhile,
+                            mathematicians, physicists, chemists and other scientists are
+                            finding it very difficult to use ordinary HTML to express
+                            mathematical formulae and scientific expressions.
+                            
+                            <p>It is strange to think that the Web originally evolved for the
+                            benefit of physicists to facilitate communication of ideas and
+                            papers.
+                    </section>
+                    <h2>1.10    HTML and style sheets</h2>
+                    <section>
+                        <p>Both Netscape and Microsoft are at last implementing style sheets
+                        for Web pages.
+                        
+                        <p>Chapter 9 in this book explains how to use style sheets, and
+                        throughout this book you will see references as to how to use the
+                        style sheet language, CSS (Cascading Style Sheets) to obtain the
+                        layout effects you want. Cascading Style Sheets potentially gives
+                        the user nearly as much control over the look and feel of material
+                        as would a conventional desktop publishing package, and so, it
+                        relieves HTML of the burden of non-standard extensions, rendering
+                        HTML available for its proper role of structuring information. World
+                        Wide Web Consortium members H&aring;kon Lie and Bert Bos, with
+                        contributions from Chris Lilley, Dave Raggett and others developed
+                        CSS. Microsoft is implementing CSS on its Internet Explorer browser.
+                    </section>
+                </article>
+            </main>
+            <footer>
+                <nav><small><a href="C:/Users/User/Desktop/Web/homework/Licensing%20Conditions.html">&copy; Addison Wesley Longman 1998. 
+                    All rights reserved</a></small></nav>
+            </footer>
+    </body>
+</html>
